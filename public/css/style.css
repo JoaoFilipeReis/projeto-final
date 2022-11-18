@@ -1,104 +1,264 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* Estilização do Cabeçalho */
+
+
+.img-header {
+  height: 760px;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 70px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.menu-button {
+  margin-top: 70px;
+}
+
+header {
+  height: 780px;
 }
 
 
-/* Estilização do Cabeçalho */
 
-/*
-h1{
-    margin-top: 70px;
-    font-size: 35px;
-    font-weight: bold;
-}*/
+.test {
+  border: solid 1px red;
+}
 
+.carousel-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 600px;
+  z-index: -1;
+}
 
+@media only screen and (max-width: 380px) {
   
-  .carousel-mobile {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 780px;
-    z-index: -1;
+  header {
+    border-bottom: solid 1px red;
   }
   
-  @media only screen and (max-width: 350px) {
-    
-    header {
-      border-bottom: solid 1px red;
-    }
-    
-    .header-menu {
-      border: solid 1px red;
-      width: 100%;
-    }
-  }
-  
-  @media only screen and (min-width: 600px) {
-    .carousel-mobile {
-      display: none;
-    }
-  }  
-
-
-  /* Estilização do Rodapé */
-
-  .footer-line {
-    color: #707070(112, 112, 112);
-    stroke: 1px;
+  .header-menu {
+    border: solid 1px red;
     width: 100%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
+}
 
-  .field-title {
-    margin-top: 20px;
-    font-family: serif;
-    font-weight: bold;
-    font-size: 15px;
-    color: #4D4D4D(77, 77, 77);
-    text-transform: uppercase;
+@media only screen and (min-width: 380px) {
+  .carousel-mobile {
+    display: none;
   }
-
-  .field-text {
-    padding-top: 6px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .social-title {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .social-icons {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .livro-reclamacoes,
-  .ralc {
-    margin-top: 65px;
-    padding-left: 44px;
-    padding-right: 44px;
-  }
-
-  .cookies {
-    margin-top: 43px;
-    text-align: center;
-  }
-
-  .copyright {
-    margin-bottom: 60px;
-    text-align: center;
-  }
+}
 
 
+/* Estilização do Rodapé */
 
+.footer-title {
+  font-family: url('IBM Plex Sans, Bold');
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: rgb(77, 77, 77);
+}
+
+.footer-line {
+  color: rgb(112, 112, 112);
+  stroke: 1px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  size: 10px;
+}
+
+.field-title {
+  margin-top: 20px;
+  font-family: url('IBMPlexSans-Medium.eot');
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(177, 126, 59);
+  text-transform: uppercase;
+}
+
+.field-text {
+  padding-top: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
+  font-family: url('IBM Plex Sans, Light');
+  color: rgb(77, 77, 77);
+}
+
+.social-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: url('IBM Plex Sans, Bold');
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: rgb(77, 77, 77);
+}
+
+.social-icons {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.livro-reclamacoes,
+.ralc {
+  margin-top: 65px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.cookies {
+  margin-top: 43px;
+  text-align: center;
+  font-family: 'Lato';
+}
+
+.copyright {
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: 'Lato';
+}
+
+/* Estilização Home */
+
+/* -------------------------------------------- Área Bem-Vindo */
+
+.home-box {
+  width: 100%;
+  height: 1210px;
+  background-color: white;
+  box-shadow: 3px 20px 6px 0px whitesmoke;
+}
+
+.bem-vindo {
+  margin-top: 73px;
+  max-width: 100%;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.home-title {
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
+  text-align: left;
+  font-family: url('IBM Plex Sans, Bold');
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.home-text {
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+  font-size: 15px;
+  font-family: 'IBM Plex Sans, Light';
+  color: rgb(77, 77, 77);
+}
+
+.home-btn {
+  margin-top: 40px;
+  width: 101px;
+  height: 26px;
+  border-style: none;
+  background-image: url('../public/imagens-desktop/sabermais1.svg');
+  background-size: cover;
+}
+
+.home-btn:hover {
+  background-image: url('public/imagens-desktop/sabermais2.svg');
+  background-size: cover;
+}
+
+/* ------------------------------- Área Últimos Livros */
+
+/* Título e Texto */
+
+.books-title {
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-family: url('IBM Plex Sans, Bold');
+  color: rgb(77, 77, 77);
+  font-size: 22px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.books-text {
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+  font-size: 13px;
+  font-family: url('IBM Plex Sans, Light');
+  text-align: left;
+  color: rgb(77, 77, 77);
+}
+
+/* Destaques */
+
+.img-books {
+  margin-top: 42px;
+  max-width: 100%;
+}
+
+.last-books-box {
+  height: 530px;
+  width: 325px;
+  max-height: auto;
+  margin-bottom: 60px;
+  background-color: white;
+  box-shadow: 3px 20px 6px 0px whitesmoke;
+}
+
+.highlight-title {
+  text-transform: uppercase;
+  margin-top: 30px;
+  left: 25px;
+  right: 25px;
+  text-align: left;
+  font-family: url('IBM Plex Sans, Bold');
+  color: rgb(77, 77, 77);
+  font-size: 22px;
+  position: absolute;
+}
+
+.categoria {
+  text-transform: uppercase;
+  top: 110px;
+  left: 25px;
+  right: 25px;
+  position: absolute;
+  font-family: url('IBMPlexSans-Medium.eot');
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(177, 126, 59);
+}
+
+.highlight-text {
+  top: 150px;
+  left: 25px;
+  right: 25px;
+  font-size: 15px;
+  font-family: url('IBM Plex Sans, Light');
+  color: rgb(77, 77, 77);
+  position: absolute;
+}
+
+.highlight-btn {
+  top: 350px;
+  position: absolute;
+  right: 25px;
+  background-image: url('../public/imagens-desktop/sabermais1.svg');
+  background-size: cover;
+}

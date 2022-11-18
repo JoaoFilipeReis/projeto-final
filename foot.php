@@ -3,7 +3,6 @@
 ?>
 
 <footer>
-
     <div class="container">
 
         <div class="row">
@@ -14,13 +13,13 @@
 
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <h1 class="">CONTACTOS</h1>
+                <h1 class="footer-title">contactos</h1>
             </div>
 
             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                 <h2 class="field-title">morada</h2>
-                <p class="field-text">Lorem ipsum, dolor sit amet 12
-                    123-543 - Lorem
+                <p class="field-text">Lorem ipsum, dolor sit amet 12,
+                    1234-543 Lorem
                 </p>
             </div>
             <br>
@@ -39,7 +38,7 @@
 
         <div class="row">
             <div class="col-12 flex justify-content-center align-items-center">
-                <h1 class="social-title">SIGA-ME NAS REDES SOCIAIS</h1>
+                <h1 class="social-title">siga-me nas redes sociais</h1>
             </div>
             <div class="col d-flex justify-content-center">
                 <img class="social-icons" src="./public/imagens-desktop/instagram1.svg" alt="instagram">
@@ -56,16 +55,16 @@
         </div>
 
         <div class="row">
-            <div class="col-12 d-flex flex-column">
+            <div class="col-12 d-flex justify-content-center align-items-center flex-column">
                 <p class="cookies">Política de Cookies.</p>
                 <p class="copyright">Copyright © 2021 Grupo MediaMaster. Todos os direitos reservados.</p>
             </div>
         </div>
-
     </div>
+
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
 
