@@ -1,26 +1,14 @@
+body {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+
 /* Estilização do Cabeçalho */
-
-
-.img-header {
-  height: 760px;
-  width: 100%;
-}
-
-h1 {
-  margin-top: 70px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.menu-button {
-  margin-top: 70px;
-}
 
 header {
   height: 780px;
 }
-
-
 
 .test {
   border: solid 1px red;
@@ -52,6 +40,7 @@ header {
     display: none;
   }
 }
+
 
 
 /* Estilização do Rodapé */
@@ -107,6 +96,7 @@ header {
 .social-icons {
   padding-left: 25px;
   padding-right: 25px;
+  max-width: 100%;
 }
 
 .livro-reclamacoes,
@@ -114,6 +104,7 @@ header {
   margin-top: 65px;
   padding-left: 44px;
   padding-right: 44px;
+  max-width: 100%;
 }
 
 .cookies {
@@ -172,12 +163,12 @@ header {
   width: 101px;
   height: 26px;
   border-style: none;
-  background-image: url('../public/imagens-desktop/sabermais1.svg');
+  background-image: url("../imagens-desktop/sabermais1.svg");
   background-size: cover;
 }
 
 .home-btn:hover {
-  background-image: url('public/imagens-desktop/sabermais2.svg');
+  background-image: url("../imagens-desktop/sabermais2.svg");
   background-size: cover;
 }
 
@@ -207,58 +198,58 @@ header {
 
 /* Destaques */
 
-.img-books {
-  margin-top: 42px;
-  max-width: 100%;
-}
-
-.last-books-box {
+.caption{
   height: 530px;
-  width: 325px;
-  max-height: auto;
-  margin-bottom: 60px;
-  background-color: white;
+  max-height: 100%;
   box-shadow: 3px 20px 6px 0px whitesmoke;
+  width: 100%;
 }
 
-.highlight-title {
+.thumbnail img{
+  margin-top: 42px;
+  width: 100%;
+}
+
+.caption h1{
   text-transform: uppercase;
   margin-top: 30px;
-  left: 25px;
-  right: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
   text-align: left;
   font-family: url('IBM Plex Sans, Bold');
   color: rgb(77, 77, 77);
   font-size: 22px;
-  position: absolute;
 }
 
-.categoria {
+.category {
   text-transform: uppercase;
-  top: 110px;
-  left: 25px;
-  right: 25px;
-  position: absolute;
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
   font-family: url('IBMPlexSans-Medium.eot');
   font-weight: bold;
   font-size: 15px;
   color: rgb(177, 126, 59);
 }
 
-.highlight-text {
-  top: 150px;
-  left: 25px;
-  right: 25px;
+.text-highlight {
+  margin-top: 14px;
+  margin-left: 25px;
+  margin-right: 25px;
   font-size: 15px;
   font-family: url('IBM Plex Sans, Light');
   color: rgb(77, 77, 77);
-  position: absolute;
+
 }
 
-.highlight-btn {
-  top: 350px;
-  position: absolute;
-  right: 25px;
-  background-image: url('../public/imagens-desktop/sabermais1.svg');
+.caption button {
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 101px;
+  height: 26px;
+  border-style: none;
+  background-image: url("../imagens-desktop/sabermais1.svg");
   background-size: cover;
 }
+
