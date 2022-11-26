@@ -54,7 +54,7 @@ require_once 'head.php';
                         <p class="text-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum, dolorem aperiam id minus omnis ad beatae molestias odit iusto officia sequi corrupti doloribus atque dolore. Voluptatibus nostrum ab libero.</p>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <button></button>
+                        <button class="home-btn"></button>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ require_once 'head.php';
                         <p class="text-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum, dolorem aperiam id minus omnis ad beatae molestias odit iusto officia sequi corrupti doloribus atque dolore. Voluptatibus nostrum ab libero.</p>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <button></button>
+                        <button class="home-btn"></button>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@ require_once 'head.php';
                         <p class="text-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum, dolorem aperiam id minus omnis ad beatae molestias odit iusto officia sequi corrupti doloribus atque dolore. Voluptatibus nostrum ab libero.</p>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <button></button>
+                        <button class="home-btn"></button>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ require_once 'head.php';
                     <p class="text-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum, dolorem aperiam id minus omnis ad beatae molestias odit iusto officia sequi corrupti doloribus atque dolore. Voluptatibus nostrum ab libero.</p>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <button></button>
+                    <button class="home-btn"></button>
                 </div>
             </div>
         </div>
