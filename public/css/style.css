@@ -1,10 +1,18 @@
-body {
-  margin-left: 35px;
-  margin-right: 35px;
+/* Estilização do Cabeçalho */
+
+/* Cabeçalho Desktop */
+
+#start {
+  position: absolute;
+  width: 100%;
+  border: 0px solid red;
+  z-index: 1000;
 }
 
-
-/* Estilização do Cabeçalho */
+@media only screen and (max-width: 965px) {
+.titulo {
+    margin-top: 0px;
+}}
 
 .main-title{
   font-family: url('IBM Plex Sans, Bold');
@@ -14,43 +22,193 @@ body {
   color: rgb(77, 77, 77);
 }
 
-.headbtn{
-  border-style: none;
-  margin-top: 70px;
+@media only screen and (max-width: 965px) {
+.titulo {
+    margin-top: 0px;
+}}
+
+.linha-titulo {
+  width: 90%;
+  height: 1px;
+  background-color: red;
+  margin: 10px 0px 15px 0px;
 }
 
-header h1{
-  margin-top: 70px;
+#menu-topo {
+  margin-top: -15px;
+  transition-duration: 0.5s;
 }
 
-header ul{
-  background-color: white;
-  width: 100%;
+#collapsebtn {
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
-ul li {
-  font-size: 18px;
+.menus.active {
+  color: var(--cor-dourado-b4);
+}
+
+.menus {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 1.125rem;
   text-transform: uppercase;
-  color: #4D4D4D;
-  padding: 22px;
+  color: var(--cor-cinza-4d);
 }
 
-ul a {
+#submenu-livros {
+  padding: 25px 5px 20px 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgb(175 175 175);
+  -moz-box-shadow: 0px 0px 10px 0px rgb(175, 175, 175);
+  box-shadow: 0px 0px 10px 0px rgb(175 175 175);
+  border-radius: 0px;
+  border: 0px solid black;
+}
+
+.submenus {
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  color: var(--cor-cinza-4d);
+  margin-bottom: 5px;
   text-decoration: none;
-  color: #4D4D4D;
-  font-family: url('Lato-Black.eot');
-  font-weight: bold;
 }
 
-header {
-  height: 780px;
+#cabecalho {
+  /* display: block; */
+  border: 0px solid blue;
+  z-index: 100 !important;
 }
 
-.test {
-  border: solid 1px red;
+@media only screen and (max-width: 900px) {
+.cabecalho-indicadores {
+    bottom: 35px;
+} }
+
+@media only screen and (max-width: 1000px) {
+.cabecalho-indicadores {
+    bottom: 40px;
+}}
+
+@media only screen and (max-width: 1170px) {
+.cabecalho-indicadores {
+    bottom: 50px;
+}}
+
+.cabecalho-indicadores {
+  width: 25%;
+  height: auto;
+  justify-content: left;
+  bottom: 90px;
+  border: 0px solid red;
+  z-index: 101;
 }
 
-.header-btn {
+.carousel-indicators li.active {
+  background-image: url('../imagens/desktop/bolabanner2.svg');
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url('../imagens/desktop/bolabanner1.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.carousel-inner {
+  width: 98vw;
+  height: auto;
+  max-height: 730px;
+  border: 0px solid red;
+  z-index: 100 !important;
+  background-image: linear-gradient(rgb(220, 220, 220), rgb(222, 222, 222), rgb(208, 208, 208));
+}
+
+.carousel-item .img-fluid {
+  width: 100%;
+  height: auto;
+  max-height: 730px;
+  z-index: 100 !important;
+}
+
+@media only screen and (max-width: 868px) {
+.cabecalho-legendas {
+    top: 22.5%;
+} }
+
+@media only screen and (max-width: 900px) {
+.cabecalho-legendas {
+    top: 25%;
+} }
+
+@media only screen and (max-width: 965px) {
+.cabecalho-legendas {
+    top: 30%;
+} }
+
+.cabecalho-legendas {
+  position: absolute;
+  top: 38%;
+  left: 15%;
+  width: 37.5%;
+  padding: 0px !important;
+  text-align: left;
+  border: 0px solid black;
+}
+
+.banner-novidade {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--cor-dourado-b4);
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 868px) {
+.banner-titulo {
+    font-size: 1.75rem;
+    line-height: 30px;
+} }
+
+@media only screen and (max-width: 1170px) {
+.banner-titulo {
+    font-size: 2rem;
+    line-height: 35px;
+} }
+
+.banner-titulo {
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: var(--cor-cinza-4d);
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 868px) {
+.banner-texto {
+    font-size: 0.7rem;
+} }
+
+@media only screen and (max-width: 1170px) {
+.banner-texto {
+    font-size: 0.75rem;
+} }
+
+.banner-texto {
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-size: 0.813rem;
+  color: var(--cor-cinza-4d);
+}
+
+.botao-sabermais-banner {
   margin-top: 40px;
   width: 101px;
   height: 26px;
@@ -59,48 +217,73 @@ header {
   background-size: cover;
 }
 
-.header-btn:hover {
-  background-image: url("../imagens-desktop/sabermais2.svg");
+.botao-sabermais-banner:hover {
+  background-image: url('../imagens-desktop/sabermais2.svg');
   background-size: cover;
 }
 
-.carousel-mobile {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 600px;
-  z-index: -1;
+.carousel-item .img-fluid {
+  width: 100%;
+  height: auto;
+  max-height: 730px;
+  z-index: 100 !important;
+}
+
+.banner-novidade-vazio {
+  height: 20px;
+  margin-bottom: 15px;
+  border: 0px solid red;
+}
+
+/* Cabeçalho Mobile */
+
+#cabecalho-mobile {
+  /* display: none; */
+  border: 0px solid red;
+}
+
+.cabecalho-indicadores-mobile {
+  width: auto;
+  height: auto;
+  justify-content: left;
+  left: -8%;
+  bottom: 50px;
+  border: 0px solid green;
+  z-index: 101;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(../imagens/desktop/bolabanner1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.carousel-indicators li.active {
+  background-image: url(../imagens/desktop/bolabanner2.svg);
 }
 
 .carousel-inner {
-  height: 760px;
+  width: 98vw;
+  height: auto;
+  max-height: 730px;
+  border: 0px solid red;
+  z-index: 100 !important;
+  background-image: linear-gradient(rgb(220, 220, 220), rgb(222, 222, 222), rgb(208, 208, 208));
 }
 
-.horizontal-line {
-  margin-top: 15px;
-  border-bottom: solid 1px #707070 ;
+.cabecalho-legendas-mobile {
+  position: absolute;
+  top: 50%;
+  left: 7.5%;
+  width: 85%;
+  padding: 0px !important;
+  text-align: left;
+  border: 0px solid black;
 }
-
-@media only screen and (max-width: 380px) {
-  
-  header {
-    border-bottom: solid 1px red;
-  }
-  
-  .header-menu {
-    border: solid 1px red;
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 450px) {
-  .carousel-mobile {
-    display: none;
-  }
-}
-
-
 
 /* Estilização do Rodapé */
 
@@ -178,137 +361,189 @@ header {
   font-family: 'Lato';
 }
 
-/* Estilização Home */
 
-/* -------------------------------------------- Área Bem-Vindo */
+--------------------------------------------------------
 
-.home-box {
-  width: 100%;
-  height: 1210px;
+.destaques-titulo {
+  font-family: "IBM Plex Sans";
+  font-weight: normal;
+  font-size: 1.438rem;
+  text-transform: uppercase;
+  line-height: 25px;
+  color: var(--cor-cinza-4d);
+}
+
+.contactos-titulo {
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  font-size: 0.938rem;
+  text-transform: uppercase;
+  color: var(--cor-dourado-b1);
+}
+
+.contactos-conteudo {
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-size: 0.938rem;
+  color: var(--cor-cinza-4d);
+}
+
+#copyright {
+  margin-top: 88px;
+}
+
+.p {
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-size: 0.9rem;
+  /* font-size: 0.813rem; */
+  color: var(--cor-cinza-4d);
+}
+
+.cookies {
+  text-decoration: none;
+  color: var(--cor-cinza-4d);
+}
+
+menus rodapes
+
+.menu-rodape-linha {
+  width: 90%;
+  height: 10px;
+  background-color: red;
+  margin: 10px 0px 15px 0px;
+  text-align: center;
+}
+
+
+.menu-rodape-itens {
+  margin: 27px 0px;
+}
+
+.menus-barra-rodape {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--cor-cinza-4d);
+  margin: 0px 15px;
+}
+
+/* Estilização Contactos e Imprensa*/
+
+#caixa-topo {
+  position: relative;
+  margin-top: -10px;
   background-color: white;
-  box-shadow: 3px 20px 6px 0px whitesmoke;
+  -webkit-box-shadow: 1px 1px 10px 0px rgb(150 150 150);
+  -moz-box-shadow: 1px 1px 10px 0px rgb(150, 150, 150);
+  box-shadow: 1px 1px 10px 0px rgb(150 150 150);
+  border: 0px solid black;
+  z-index: 200 !important;
 }
 
-.bem-vindo {
-  margin-top: 73px;
-  max-width: 100%;
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
-.home-title {
+.titulo-topo {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 1.125rem;
   text-transform: uppercase;
-  margin-top: 35px;
-  margin-left: 35px;
-  margin-right: 35px;
-  text-align: left;
-  font-family: url('IBM Plex Sans, Bold');
-  color: rgb(77, 77, 77);
-  font-weight: bold;
-  font-size: 22px;
+  color: var(--cor-dourado-b4);
 }
 
-.home-text {
-  margin-top: 20px;
-  margin-left: 35px;
-  margin-right: 35px;
-  font-size: 15px;
-  font-family: 'IBM Plex Sans, Light';
-  color: rgb(77, 77, 77);
-}
-
-.home-btn {
-  margin-top: 40px;
-  width: 101px;
-  height: 26px;
-  border-style: none;
-  background-image: url("../imagens-desktop/sabermais1.svg");
-  background-size: cover;
-}
-
-.home-btn:hover {
-  background-image: url("../imagens-desktop/sabermais2.svg");
-  background-size: cover;
-}
-
-/* ------------------------------- Área Últimos Livros */
-
-/* Título e Texto */
-
-.books-title {
+.destaques-titulo {
+  font-family: "IBM Plex Sans";
+  font-weight: normal;
+  font-size: 1.438rem;
   text-transform: uppercase;
-  margin-top: 40px;
-  font-family: url('IBM Plex Sans, Bold');
-  color: rgb(77, 77, 77);
-  font-size: 22px;
-  margin-left: 35px;
-  margin-right: 35px;
+  line-height: 25px;
+  color: var(--cor-cinza-4d);
 }
 
-.books-text {
-  margin-top: 20px;
-  margin-left: 35px;
-  margin-right: 35px;
-  font-size: 13px;
-  font-family: url('IBM Plex Sans, Light');
-  text-align: left;
-  color: rgb(77, 77, 77);
+#menu-rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Destaques */
+.menu-rodape-itens {
+  margin: 27px 0px;
+}
 
-.caption{
-  height: 530px;
-  max-height: 100%;
-  box-shadow: 3px 20px 6px 0px whitesmoke;
+.menus-barra-rodape {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--cor-cinza-4d);
+  margin: 0px 15px;
+}
+
+.menu-rodape-linha {
+  width: 95%;
+  height: 1px;
+  background-color: var(--cor-cinza-70);
+}
+
+.noticias-linha {
+  height: 1px;
+  background-color: var(--cor-dourado-a9);
+}
+
+.imprensa-data {
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  color: var(--cor-cinza-4d);
+}
+
+.p {
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-size: 0.9rem;
+  /* font-size: 0.813rem; */
+  color: var(--cor-cinza-4d);
+}
+
+.imprensa-texto {
   width: 100%;
 }
 
-.thumbnail img{
-  margin-top: 42px;
-  width: 100%;
+.linha-separadora {
+  height: 60px;
+  margin-bottom: 80px;
+  -webkit-box-shadow: 0px 6px 5px 0px rgb(225 225 225);
+  -moz-box-shadow: 0px 6px 5px 0px rgb(225, 225, 225);
+  box-shadow: 0px 6px 5px 0px rgb(225 225 225);
 }
 
-.caption h1{
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-left: 25px;
-  margin-right: 25px;
-  text-align: left;
-  font-family: url('IBM Plex Sans, Bold');
-  color: rgb(77, 77, 77);
-  font-size: 22px;
+
+#seta-esquerda {
+  background-image: url(../imagens/desktop/setaesquerda1.svg);
+  margin-right: 45px;
 }
 
-.category {
-  text-transform: uppercase;
-  margin-top: 30px;
-  margin-left: 25px;
-  margin-right: 25px;
-  font-family: url('IBMPlexSans-Medium.eot');
-  font-weight: bold;
-  font-size: 15px;
-  color: rgb(177, 126, 59);
+.setas-paginacao {
+  width: 17px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.text-highlight {
-  margin-top: 14px;
-  margin-left: 25px;
-  margin-right: 25px;
-  font-size: 15px;
-  font-family: url('IBM Plex Sans, Light');
-  color: rgb(77, 77, 77);
-
+.paginacao.active {
+  color: var(--cor-dourado-b1);
 }
 
-.caption button {
-  margin-top: 15px;
-  margin-left: 25px;
-  margin-right: 25px;
-  width: 101px;
-  height: 26px;
-  border-style: none;
-  background-image: url("../imagens-desktop/sabermais1.svg");
-  background-size: cover;
+.paginacao {
+  font-family: "IBM Plex Sans";
+  font-size: 1.438rem;
+  font-weight: normal;
+  color: var(--cor-cinza-4d);
+  margin: 0px 12px;
 }
 
+#seta-direita {
+    background-image: url(../imagens/desktop/setadireita1.svg);
+    margin-left: 45px;
+}

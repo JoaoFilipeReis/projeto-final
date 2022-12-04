@@ -1,8 +1,8 @@
+<!-- Área Bem-vindo-->
 <?php
+require_once 'config.php';
 require_once 'head.php';
 ?>
-
-<!-- Área Bem-vindo-->
 
 <div class="container-fluid">
     <div class="row">
@@ -101,6 +101,7 @@ require_once 'head.php';
             </div>
         </div>
 
+        <!--
         <div class="card" style="width: 100%;">
             <img src="./public/imagens-desktop/livro3.jpg" class="card-img-top imagem" alt="vgu">
             <div class="card-body">
@@ -118,12 +119,7 @@ require_once 'head.php';
                 </div>
             </div>
         </div>
+        -->
 
     </div>
 </div>
-
-<?php
-
-require_once 'foot.php';
-
-?>

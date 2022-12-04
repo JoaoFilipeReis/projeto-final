@@ -1,176 +1,209 @@
-<?php require_once 'config.php'; ?>
+<?php 
+
+require_once 'config.php';
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $page_title ?></title>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="public/css/fonts.css">
-  <link rel="stylesheet" href="public/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $page_title ?></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/fonts.css">
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 
 <body>
+    <header class="container-fluid">
 
-
-  <header>
-    <div class="container-fluid">
-      <div class="row d-lg-none">
-        <div class="col-8 d-flex align-items-center">
-          <h1 class="fs-3 main-title">sebastião alves</h1>
-        </div>
-        <div class="col-4 d-flex align-items-center justify-content-end">
-          <button class="headbtn" data-bs-toggle="collapse" data-bs-target="#collapsebtn">
-            <img src="./public/imagens-desktop/menu.svg" alt="">
-          </button>
-        </div>
-        <div class="collapse col-12" id="collapsebtn">
-
-          <ul class="list-unstyled">
-            <li>
-              <a class="" href="#">HOME</a>
-            </li>
-            <li>
-              <a class="" href="#">AUTOR</a>
-            </li>
-            <li>
-              <a class="" href="#">LIVROS</a>
-            </li>
-            <li>
-              <a class="" href="#">IMPRENSA</a>
-            </li>
-            <li>
-              <a class="" href="#">CONTACTOS</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-
-    </div>
-
-    <div class="horizontal-line"></div>
-
-    <div class="carousel-mobile">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./public/imagens-mobile/cabecalho1.jpg" class="d-block w-100" alt="imagem 1">
-            <div class="carousel-caption d-md-block">
-              <p class="t-150">NOVIDADE</p>
-              <h5>senhora do amor e da guerra</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quasi sunt nesciunt in consequuntur harum totam voluptates, est, fuga vel inventore aliquid beatae sed neque esse voluptatum ullam ratione ea?</p>
-              <div class="d-flex justify-content-end">
-                <button class="header-btn"></button>
-              </div>
+        <div id="start" class="row">
+            <div class="main-title col-12 d-flex justify-content-around justify-content-md-center">
+                <div class="row">Sebastião Alves</div>
+                <div class="row">
+                    <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn">
+                        <img id="botao-menu-imagem" src="./public/imagens-desktop/menu.svg">
+                    </button>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="./public/imagens-mobile/cabecalho2.jpg" class="d-block w-100" alt="imagem 2">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./public/imagens-mobile/cabecalho3.jpg" class="d-block w-100" alt="imagem 3">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./public/imagens-mobile/cabecalho4.jpg" class="d-block w-100" alt="imagem 4">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
+            <div class="linha-titulo col-auto mx-auto"></div>
+
+            <nav id="menu-topo" class="col-12 navbar navbar-expand-md">
+                <div class="collapse navbar-collapse d-block-md" id="collapsebtn">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mr-md-3">
+                            <a class="nav-link menus active" href="home.php">Home</a>
+                        </li>
+                        <li class="nav-item mr-md-3">
+                            <a class="nav-link menus " href="autor.php">Autor</a>
+                        </li>
+                        <li class="nav-item mr-md-3 dropdown" id="li-menu-livros">
+                            <a class="nav-link menus " href="" id="menu-livros" data-bs-toggle="dropdown">Livros</a>
+                            <div id="submenu-livros" class="dropdown-menu">
+                                <a class="dropdown-item submenus " href="#">Senhora do Amor e da Guerra</a>
+                                <a class="dropdown-item submenus " href="#">O caracol estrábico</a>
+                                <a class="dropdown-item submenus " href="#">O Coleccionador de amnésias</a>
+                                <a class="dropdown-item submenus " href="#">O Velho que pensava que fugia</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-md-3">
+                            <a class="nav-link menus" href="imprensa.php">Imprensa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menus" href="contactos.php">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
         </div>
-      </div>
+
+        <div id="cabecalho" class="row d-none d-md-block">
+            <div id="carousel-desktop" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+                <ol class="carousel-indicators cabecalho-indicadores">
+                    <li class="active mr-3" data-bs-target="#carousel-desktop" data-bs-slide-to="0"></li>
+                    <li class=" mr-3" data-bs-target="#carousel-desktop" data-bs-slide-to="1"></li>
+                    <li class=" mr-3" data-bs-target="#carousel-desktop" data-bs-slide-to="2"></li>
+                    <li class=" mr-3" data-bs-target="#carousel-desktop" data-bs-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="./public/imagens-desktop/cabecalho1.jpg" alt="Cabeçalho 1">
+                        <div class="carousel-caption d-none d-md-block cabecalho-legendas">
+                            <div class="banner-novidade">Novidade</div>
+                            <div class="banner-titulo">Senhora do Amor e da Guerra</div>
+                            <div class="banner-texto">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
+                            </div>
+                            <a href="#">
+                                <button class="botao-sabermais-banner"></button>
+                            </a>
+                        </div>
+                    </div>
 
 
+                    <div class="carousel-item ">
+                        <img class="d-block img-fluid" src="./public/imagens-desktop/cabecalho2.jpg" alt="Cabeçalho 2">
+                        <div class="carousel-caption d-none d-md-block cabecalho-legendas">
+                            <div class="banner-novidade-vazio"></div>
+                            <div class="banner-titulo">O caracol Estrábico</div>
+                            <div class="banner-texto">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
+                            </div>
+                            <a href="#">
+                                <button class="botao-sabermais-banner"></button>
+                            </a>
+                        </div>
+                    </div>
 
-      <!--
-    <div class="container">
-      <div class="row">
-        <div class="col-8 d-flex align-items-center">
-          <h1 class="fs-3 text-white">SEBASTIÃO ALVES</h1>
-        </div>
-        <div class="col-4 d-flex align-items-center justify-content-end">
-          <span class="text-white menu-button">MENU</span>
-        </div>
-        <div class="col-12 menu-header d-flex">
-          <ul class="list-unstyled m-0 py-3">
-            <li>
-              <a class="text-white" href="">HOME</a>
-            </li>
-            <li>
-              <a class="text-white" href="">AUTOR</a>
-            </li>
-            <li>
-              <a class="text-white" href="">LIVROS</a>
-            </li>
-            <li>
-              <a class="text-white" href="">IMPRENSA</a>
-            </li>
-            <li>
-              <a class="text-white" href="">CONTACTOS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-    <div class="carousel-mobile">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <div class="carousel-item ">
+                        <img class="d-block img-fluid" src="./public/imagens-desktop/cabecalho3.jpg" alt="Cabeçalho 3">
+                        <div class="carousel-caption d-none d-md-block cabecalho-legendas">
+                            <div class="banner-novidade-vazio"></div>
+                            <div class="banner-titulo">O Colecionador de amnésias</div>
+                            <div class="banner-texto">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
+                            </div>
+                            <a href="#">
+                                <button class="botao-sabermais-banner"></button>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item ">
+                        <img class="d-block img-fluid" src="./public/imagens-desktop/cabecalho4.jpg" alt="Cabeçalho 4">
+                        <div class="carousel-caption d-none d-md-block cabecalho-legendas">
+                            <div class="banner-novidade-vazio"></div>
+                            <div class="banner-titulo">O Velho que pensava que fugia</div>
+                            <div class="banner-texto">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
+                            </div>
+                            <a href="#">
+                                <button class="botao-sabermais-banner"></button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./public/imagens-mobile/cabecalho1.jpg" class="d-block w-100" alt="imagem 1">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+
+        <!-- Mobile Header -->
+
+        <div id="cabecalho-mobile" class="row d-block d-md-none">
+            <div id="carousel-mobile" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+                <ol class="carousel-indicators cabecalho-indicadores-mobile">
+                    <li class="active mr-3" data-bs-target="#carousel-mobile" data-bs-slide-to="0"></li>
+                    <li class=" mr-3" data-bs-target="#carousel-mobile" data-bs-slide-to="1"></li>
+                    <li class=" mr-3" data-bs-target="#carousel-mobile" data-bs-slide-to="2"></li>
+                    <li class=" mr-3" data-bs-target="#carousel-mobile" data-bs-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="./public/imagens-mobile/cabecalho1.jpg" alt="Cabeçalho 1">
+                        <div class="carousel-caption d-block cabecalho-legendas-mobile">
+                            <div class="banner-novidade">Novidade</div>
+                            <div class="banner-titulo">Senhora do Amor e da Guerra</div>
+                            <div class="banner-texto">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
+                            </div>
+                            <a href="#">
+                                <button class="botao-sabermais-banner"></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <img class="d-block img-fluid" src="./public/imagens-mobile/cabecalho2.jpg" alt="Cabeçalho 2">
+                        <div class="carousel-caption d-block cabecalho-legendas-mobile">
+                            <div class="banner-novidade-vazio"></div>
+                            <div class="banner-titulo">O Caracol Estrábico</div>
+                            <div class="banner-texto">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
+                            </div>
+                            <a href="#">
+                                <button class="botao-sabermais-banner"></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <img class="d-block img-fluid" src="./public/imagens-mobile/cabecalho3.jpg" alt="Cabeçalho 3">
+                        <div class="carousel-caption d-block cabecalho-legendas-mobile">
+                            <div class="banner-novidade-vazio"></div>
+                            <div class="banner-titulo">O coleccionador de amnésias</div>
+                            <div class="banner-texto">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
+                            </div>
+                            <a href="#">
+                                <button class="botao-sabermais-banner"></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <img class="d-block img-fluid" src="./public/imagens-mobile/cabecalho4.jpg" alt="Cabeçalho 4">
+                        <div class="carousel-caption d-block cabecalho-legendas-mobile">
+                            <div class="banner-novidade-vazio"></div>
+                            <div class="banner-titulo">O Velho que pensava que fugia</div>
+                            <div class="banner-texto">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
+                            </div>
+                            <a href="#">
+                                <button class="botao-sabermais-banner"></button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./public/imagens-mobile/cabecalho2.jpg" class="d-block w-100" alt="imagem 2">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./public/imagens-mobile/cabecalho3.jpg" class="d-block w-100" alt="imagem 3">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
--->
-  </header>
+
+
+    </header>
