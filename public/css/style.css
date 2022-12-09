@@ -1,20 +1,14 @@
 /* Estilização do Cabeçalho */
 
 /* Cabeçalho Desktop */
-
 #start {
   position: absolute;
-  width: 100%;
-  border: 0px solid red;
+  width: 100vw;
   z-index: 1000;
 }
 
-@media only screen and (max-width: 965px) {
-.titulo {
-    margin-top: 0px;
-}}
-
-.main-title{
+.main-title {
+  margin-top: 70px;
   font-family: url('IBM Plex Sans, Bold');
   font-weight: bold;
   font-size: 35px;
@@ -22,21 +16,18 @@
   color: rgb(77, 77, 77);
 }
 
-@media only screen and (max-width: 965px) {
-.titulo {
-    margin-top: 0px;
-}}
 
 .linha-titulo {
-  width: 90%;
+  margin-top: 15px;
+  width: 100%;
   height: 1px;
-  background-color: red;
-  margin: 10px 0px 15px 0px;
+  background-color: rgb(112, 112, 112);
 }
 
 #menu-topo {
-  margin-top: -15px;
-  transition-duration: 0.5s;
+  margin-top: 5px;
+  transition-duration: 0.500ms;
+  margin-left: 20px;
 }
 
 #collapsebtn {
@@ -45,24 +36,26 @@
 }
 
 .menus.active {
-  color: var(--cor-dourado-b4);
+  font-size: 16px;
+  font-family: url('Lato-Black.eot');
+  font-weight: bold;
+  color: rgb(77, 77, 77);
+  text-transform: uppercase;
 }
 
 .menus {
-  font-family: "Lato";
-  font-weight: 900;
-  font-size: 1.125rem;
+  font-family: url('Lato-Black.eot');
+  font-weight: bold;
+  font-size: 16px;
   text-transform: uppercase;
-  color: var(--cor-cinza-4d);
+  color: rgb(180, 125, 51);
 }
 
 #submenu-livros {
-  padding: 25px 5px 20px 5px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgb(175 175 175);
-  -moz-box-shadow: 0px 0px 10px 0px rgb(175, 175, 175);
+  padding: 22px;
   box-shadow: 0px 0px 10px 0px rgb(175 175 175);
   border-radius: 0px;
-  border: 0px solid black;
+  margin-left: 50px;
 }
 
 .submenus {
@@ -73,28 +66,13 @@
   color: var(--cor-cinza-4d);
   margin-bottom: 5px;
   text-decoration: none;
+  margin-left: 15px;
 }
 
 #cabecalho {
-  /* display: block; */
   border: 0px solid blue;
   z-index: 100 !important;
 }
-
-@media only screen and (max-width: 900px) {
-.cabecalho-indicadores {
-    bottom: 35px;
-} }
-
-@media only screen and (max-width: 1000px) {
-.cabecalho-indicadores {
-    bottom: 40px;
-}}
-
-@media only screen and (max-width: 1170px) {
-.cabecalho-indicadores {
-    bottom: 50px;
-}}
 
 .cabecalho-indicadores {
   width: 25%;
@@ -109,7 +87,8 @@
   background-image: url('../imagens/desktop/bolabanner2.svg');
 }
 
-.carousel-indicators li, .carousel-indicators li.active {
+.carousel-indicators li,
+.carousel-indicators li.active {
   width: 20px;
   height: 20px;
   background-color: rgba(255, 255, 255, 0);
@@ -120,10 +99,9 @@
 }
 
 .carousel-inner {
-  width: 98vw;
+  width: 100vw;
   height: auto;
   max-height: 730px;
-  border: 0px solid red;
   z-index: 100 !important;
   background-image: linear-gradient(rgb(220, 220, 220), rgb(222, 222, 222), rgb(208, 208, 208));
 }
@@ -135,20 +113,48 @@
   z-index: 100 !important;
 }
 
-@media only screen and (max-width: 868px) {
-.cabecalho-legendas {
+@media only screen and (max-width: 380px) {
+  .cabecalho-legendas {
     top: 22.5%;
-} }
+  }
+}
 
 @media only screen and (max-width: 900px) {
-.cabecalho-legendas {
+  .cabecalho-legendas {
     top: 25%;
-} }
+  }
+}
 
 @media only screen and (max-width: 965px) {
-.cabecalho-legendas {
+  .cabecalho-legendas {
     top: 30%;
-} }
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+  .cabecalho-indicadores {
+    bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cabecalho-indicadores {
+    bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .cabecalho-indicadores {
+    bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-title {
+    margin-top: 52px;
+  }
+}
 
 .cabecalho-legendas {
   position: absolute;
@@ -161,51 +167,55 @@
 }
 
 .banner-novidade {
-  font-family: "Lato";
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-family: url('Lato-Bold.eot');
+  font-size: 18px;
   text-transform: uppercase;
-  color: var(--cor-dourado-b4);
-  margin-bottom: 15px;
+  color: rgb(180, 125, 51);
+  margin-bottom: 25px;
+  font-weight: 500;
 }
 
-@media only screen and (max-width: 868px) {
 .banner-titulo {
-    font-size: 1.75rem;
-    line-height: 30px;
-} }
-
-@media only screen and (max-width: 1170px) {
-.banner-titulo {
-    font-size: 2rem;
-    line-height: 35px;
-} }
-
-.banner-titulo {
-  font-family: "IBM Plex Sans";
+  font-family: url('IBMPlexSans-Light.eot');
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 40px;
   line-height: 43px;
   text-transform: uppercase;
-  color: var(--cor-cinza-4d);
+  color: rgb(77, 77, 77);
   margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 868px) {
 .banner-texto {
-    font-size: 0.7rem;
-} }
+  font-family: url('IBMPlexSans-Light.eot');
+  color: rgb(77, 77, 77);
+  font-weight: 300;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 868px) {
+  .main-title {
+    font-size: 1.75rem;
+    line-height: 30px;
+  }
+}
 
 @media only screen and (max-width: 1170px) {
-.banner-texto {
-    font-size: 0.75rem;
-} }
+  .main-title {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+}
 
-.banner-texto {
-  font-family: "IBM Plex Sans";
-  font-weight: 300;
-  font-size: 0.813rem;
-  color: var(--cor-cinza-4d);
+@media only screen and (max-width: 868px) {
+  .banner-texto {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .banner-texto {
+    font-size: 0.75rem;
+  }
 }
 
 .botao-sabermais-banner {
@@ -230,19 +240,18 @@
 }
 
 .banner-novidade-vazio {
-  height: 20px;
-  margin-bottom: 15px;
-  border: 0px solid red;
+  font-family: url('Lato-Bold.eot');
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgb(180, 125, 51);
+  margin-bottom: 25px;
+  font-weight: 500;
 }
 
 /* Cabeçalho Mobile */
 
-#cabecalho-mobile {
-  /* display: none; */
-  border: 0px solid red;
-}
-
 .cabecalho-indicadores-mobile {
+  /* Para retirar se não colocar as imgs em substituição */
   width: auto;
   height: auto;
   justify-content: left;
@@ -252,37 +261,31 @@
   z-index: 101;
 }
 
-.carousel-indicators li, .carousel-indicators li.active {
+.carousel-indicators li,
+.carousel-indicators li.active {
+  /* Para retirar se não colocar as imgs em substituição */
   width: 20px;
   height: 20px;
   background-color: rgba(255, 255, 255, 0);
-  background-image: url(../imagens/desktop/bolabanner1.svg);
+  background-image: url('../imagens-desktop/bolabanner1.svg');
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
 }
 
 .carousel-indicators li.active {
-  background-image: url(../imagens/desktop/bolabanner2.svg);
+  background-image: url('../imagens-desktop/bolabanner2.svg');
+  /* Para retirar se não colocar as imgs em substituição */
 }
 
-.carousel-inner {
-  width: 98vw;
-  height: auto;
-  max-height: 730px;
-  border: 0px solid red;
-  z-index: 100 !important;
-  background-image: linear-gradient(rgb(220, 220, 220), rgb(222, 222, 222), rgb(208, 208, 208));
-}
 
 .cabecalho-legendas-mobile {
   position: absolute;
   top: 50%;
-  left: 7.5%;
-  width: 85%;
+  left: 5%;
+  width: 100%;
   padding: 0px !important;
   text-align: left;
-  border: 0px solid black;
 }
 
 /* Estilização do Rodapé */
@@ -296,14 +299,14 @@
 }
 
 .footer-line {
-  color: rgb(112, 112, 112);
-  stroke: 1px;
-  width: 100%;
   margin-top: 60px;
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
-  size: 10px;
+  width: 90%;
+  stroke: 1px;
+  height: 1px;
+  background-color: rgb(112, 112, 112);
 }
 
 .field-title {
@@ -341,99 +344,55 @@
   max-width: 100%;
 }
 
-.livro-reclamacoes,
-.ralc {
-  margin-top: 65px;
-  padding-left: 44px;
-  padding-right: 44px;
-  max-width: 100%;
+.livro-reclamacoes {
+  padding: 25px;
 }
 
 .cookies {
   margin-top: 43px;
   text-align: center;
-  font-family: 'Lato';
+  text-align: center;
+  font-size: 15px;
+  font-family: url('IBM Plex Sans, Light');
+  color: rgb(77, 77, 77);
 }
 
 .copyright {
   margin-bottom: 60px;
   text-align: center;
-  font-family: 'Lato';
+  font-size: 15px;
+  font-family: url('IBM Plex Sans, Light');
+  color: rgb(77, 77, 77);
 }
 
 
 --------------------------------------------------------
-
-.destaques-titulo {
-  font-family: "IBM Plex Sans";
-  font-weight: normal;
-  font-size: 1.438rem;
-  text-transform: uppercase;
-  line-height: 25px;
-  color: var(--cor-cinza-4d);
-}
-
-.contactos-titulo {
-  font-family: "IBM Plex Sans";
-  font-weight: 500;
-  font-size: 0.938rem;
-  text-transform: uppercase;
-  color: var(--cor-dourado-b1);
-}
-
-.contactos-conteudo {
-  font-family: "IBM Plex Sans";
-  font-weight: 300;
-  font-size: 0.938rem;
-  color: var(--cor-cinza-4d);
-}
-
-#copyright {
-  margin-top: 88px;
-}
-
-.p {
-  font-family: "IBM Plex Sans";
-  font-weight: 300;
-  font-size: 0.9rem;
-  /* font-size: 0.813rem; */
-  color: var(--cor-cinza-4d);
-}
-
-.cookies {
-  text-decoration: none;
-  color: var(--cor-cinza-4d);
-}
-
-menus rodapes
-
-.menu-rodape-linha {
-  width: 90%;
-  height: 10px;
-  background-color: red;
-  margin: 10px 0px 15px 0px;
-  text-align: center;
-}
-
-
-.menu-rodape-itens {
-  margin: 27px 0px;
-}
-
-.menus-barra-rodape {
-  font-family: "Lato";
-  font-weight: 900;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: var(--cor-cinza-4d);
-  margin: 0px 15px;
-}
-
 /* Estilização Contactos e Imprensa*/
+
+
+/* Caixa Topo Comum ao site todo */
+
+.noticias-linha {
+  stroke: 1px;
+  height: 1px;
+  background-color: #A97339;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.imprensa-data {
+  font-family: url('IBMPlexSans-Light.eot');
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #4D4D4D;
+  margin-bottom: 40px;
+}
 
 #caixa-topo {
   position: relative;
-  margin-top: -10px;
+  min-height: 130px;
+  margin-top: -45px;
   background-color: white;
   -webkit-box-shadow: 1px 1px 10px 0px rgb(150 150 150);
   -moz-box-shadow: 1px 1px 10px 0px rgb(150, 150, 150);
@@ -442,21 +401,63 @@ menus rodapes
   z-index: 200 !important;
 }
 
+
+@media only screen and (max-width: 767px) {
+  #caixa-topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+  }
+}
+
 .titulo-topo {
-  font-family: "Lato";
-  font-weight: 900;
-  font-size: 1.125rem;
+  color: rgb(180, 125, 51);
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-family: url('Lato-Black.eot');
+  font-weight: 650;
+  font-size: 18px;
   text-transform: uppercase;
-  color: var(--cor-dourado-b4);
+  margin-left: 60px;
+}
+
+.noticias-titulo{
+  margin-bottom: 12px;
+  margin-top: 65px;
+  font-family: url('IBMPlexSans-Light.eot');
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: rgb(77, 77, 77);
 }
 
 .destaques-titulo {
-  font-family: "IBM Plex Sans";
-  font-weight: normal;
-  font-size: 1.438rem;
+  margin-bottom: 14px;
+  margin-left: 60px;
+  font-family: url('IBMPlexSans-Light.eot');
+  font-weight: bold;
+  font-size: 22px;
   text-transform: uppercase;
-  line-height: 25px;
-  color: var(--cor-cinza-4d);
+  color: rgb(77, 77, 77);
+}
+
+#area-texto {
+  margin-top: 60px;
+  font-family: url('IBMPlexSans-Light.eot');
+  font-size: 13px;
+  color: rgb(77, 77, 77);
+  padding: 55px;
+}
+
+#imagem-autor {
+  margin-top: 60px;
+  width: 350px;
+  height: 400px;
+}
+
+.btn-autor{
+  margin-top: 75px;
 }
 
 #menu-rodape {
@@ -470,57 +471,8 @@ menus rodapes
   margin: 27px 0px;
 }
 
-.menus-barra-rodape {
-  font-family: "Lato";
-  font-weight: 900;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: var(--cor-cinza-4d);
-  margin: 0px 15px;
-}
-
-.menu-rodape-linha {
-  width: 95%;
-  height: 1px;
-  background-color: var(--cor-cinza-70);
-}
-
-.noticias-linha {
-  height: 1px;
-  background-color: var(--cor-dourado-a9);
-}
-
-.imprensa-data {
-  font-family: "IBM Plex Sans";
-  font-weight: 500;
-  font-size: 0.813rem;
-  text-transform: uppercase;
-  color: var(--cor-cinza-4d);
-}
-
-.p {
-  font-family: "IBM Plex Sans";
-  font-weight: 300;
-  font-size: 0.9rem;
-  /* font-size: 0.813rem; */
-  color: var(--cor-cinza-4d);
-}
-
-.imprensa-texto {
-  width: 100%;
-}
-
-.linha-separadora {
-  height: 60px;
-  margin-bottom: 80px;
-  -webkit-box-shadow: 0px 6px 5px 0px rgb(225 225 225);
-  -moz-box-shadow: 0px 6px 5px 0px rgb(225, 225, 225);
-  box-shadow: 0px 6px 5px 0px rgb(225 225 225);
-}
-
-
 #seta-esquerda {
-  background-image: url(../imagens/desktop/setaesquerda1.svg);
+  background-image: url('../imagens-desktop/setaesquerda1.svg');
   margin-right: 45px;
 }
 
@@ -532,18 +484,241 @@ menus rodapes
 }
 
 .paginacao.active {
-  color: var(--cor-dourado-b1);
+  color: #B17E3B;
 }
 
 .paginacao {
-  font-family: "IBM Plex Sans";
-  font-size: 1.438rem;
+  font-family: url('IBMPlexSans-Light.eot');
+  font-size: 13px;
   font-weight: normal;
-  color: var(--cor-cinza-4d);
+  color: rgb(77, 77, 77);
   margin: 0px 12px;
 }
 
 #seta-direita {
-    background-image: url(../imagens/desktop/setadireita1.svg);
-    margin-left: 45px;
+  background-image: url('../imagens-desktop/setadireita1.svg');
+  margin-left: 45px;
+}
+
+/* Estilização dos Livros */
+
+#voltar-atras {
+  width: 132px;
+  height: 30px;
+  border-style: none;
+  background-image: url("../imagens-desktop/voltar1.svg");
+  background-size: cover;
+}
+
+#voltar-atras:hover {
+  width: 132px;
+  height: 30px;
+  border-style: none;
+  background-image: url("../imagens-desktop/voltar2.svg");
+  background-size: cover;
+}
+
+.capa-livro {
+  width: 350px;
+  height: 445px;
+}
+
+#subdetalhes-grande {
+  display: block;
+  /* border: 1px solid blue; */
+}
+
+
+
+/* Estilização Home */
+
+/* -------------------------------------------- Área Bem-Vindo */
+
+.home-box {
+  width: 100%;
+  height: 1210px;
+  background-color: white;
+  box-shadow: 3px 20px 6px 0px whitesmoke;
+}
+
+.bem-vindo {
+  margin-top: 73px;
+  max-width: 100%;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.home-title {
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
+  text-align: left;
+  font-family: url('IBM Plex Sans, Bold');
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.home-text {
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+  font-size: 15px;
+  font-family: 'IBM Plex Sans, Light';
+  color: rgb(77, 77, 77);
+}
+
+.home-btn {
+  margin-top: 40px;
+  width: 101px;
+  height: 26px;
+  border-style: none;
+  background-image: url("../imagens-desktop/sabermais1.svg");
+  background-size: cover;
+}
+
+.home-btn:hover {
+  background-image: url("../imagens-desktop/sabermais2.svg");
+  background-size: cover;
+}
+
+/* ------------------------------- Área Últimos Livros */
+
+/* Título e Texto */
+
+.books-title {
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-family: url('IBM Plex Sans, Bold');
+  color: rgb(77, 77, 77);
+  font-size: 22px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.books-text {
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+  font-size: 13px;
+  font-family: url('IBM Plex Sans, Light');
+  text-align: left;
+  color: rgb(77, 77, 77);
+}
+
+/* Destaques */
+
+.caption {
+  height: 530px;
+  max-height: 100%;
+  box-shadow: 3px 20px 6px 0px whitesmoke;
+  width: 100%;
+}
+
+.thumbnail img {
+  margin-top: 42px;
+  width: 100%;
+}
+
+.caption h1 {
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: left;
+  font-family: url('IBM Plex Sans, Bold');
+  color: rgb(77, 77, 77);
+  font-size: 22px;
+}
+
+.category {
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family: url('IBMPlexSans-Medium.eot');
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(177, 126, 59);
+}
+
+.text-highlight {
+  margin-top: 14px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 15px;
+  font-family: url('IBM Plex Sans, Light');
+  color: rgb(77, 77, 77);
+
+}
+
+.caption button {
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 101px;
+  height: 26px;
+  border-style: none;
+  background-image: url("../imagens-desktop/sabermais1.svg");
+  background-size: cover;
+}
+
+/* Estilização Formulário */
+/*
+.page {
+  padding: 5px;
+  max-width: 980px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form .form-group {
+  margin-bottom: 8px;
+}
+
+.form input {
+  width: 100%;
+  border: solid 2px #9fa8da;
+  outline: none;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #283593;
+  border: solid 1px #283593;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 15px;
+  font-size: 1rem;
+}
+
+.form button:hover {
+  opacity: 0.9;
+}
+*/
+
+/* form-login */
+.form-login {
+  max-width: 480px;
+  width: 100%;
+}
+
+.horizontal-line {
+  margin: 5px 0;
+  border-bottom: solid 1px #c3c3c3;
+}
+
+#sair-login {
+  font-size: 40px;
+  font-family: url('IBM Plex Sans, Light');
+  font-weight: bold;
+  color: rgb(77, 77, 77);
+  text-decoration: none;
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }

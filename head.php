@@ -43,10 +43,10 @@ require_once 'config.php';
                         <li class="nav-item mr-md-3 dropdown" id="li-menu-livros">
                             <a class="nav-link menus " href="" id="menu-livros" data-bs-toggle="dropdown">Livros</a>
                             <div id="submenu-livros" class="dropdown-menu">
-                                <a class="dropdown-item submenus " href="#">Senhora do Amor e da Guerra</a>
-                                <a class="dropdown-item submenus " href="#">O caracol estrábico</a>
-                                <a class="dropdown-item submenus " href="#">O Coleccionador de amnésias</a>
-                                <a class="dropdown-item submenus " href="#">O Velho que pensava que fugia</a>
+                                <a class="dropdown-item submenus " href="livro1.php">Senhora do Amor e da Guerra</a>
+                                <a class="dropdown-item submenus " href="livro2.php">O caracol estrábico</a>
+                                <a class="dropdown-item submenus " href="livro3.php">O Coleccionador de amnésias</a>
+                                <a class="dropdown-item submenus " href="livro4.php">O Velho que pensava que fugia</a>
                             </div>
                         </li>
                         <li class="nav-item mr-md-3">
@@ -78,7 +78,7 @@ require_once 'config.php';
                             <div class="banner-texto">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
                             </div>
-                            <a href="#">
+                            <a href="livro1.php">
                                 <button class="botao-sabermais-banner"></button>
                             </a>
                         </div>
@@ -93,7 +93,7 @@ require_once 'config.php';
                             <div class="banner-texto">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
                             </div>
-                            <a href="#">
+                            <a href="livro2.php">
                                 <button class="botao-sabermais-banner"></button>
                             </a>
                         </div>
@@ -108,7 +108,7 @@ require_once 'config.php';
                             <div class="banner-texto">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
                             </div>
-                            <a href="#">
+                            <a href="livro3.php">
                                 <button class="botao-sabermais-banner"></button>
                             </a>
 
@@ -124,7 +124,7 @@ require_once 'config.php';
                             <div class="banner-texto">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
                             </div>
-                            <a href="#">
+                            <a href="livro4.php">
                                 <button class="botao-sabermais-banner"></button>
                             </a>
                         </div>
@@ -153,7 +153,7 @@ require_once 'config.php';
                             <div class="banner-texto">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
                             </div>
-                            <a href="#">
+                            <a href="livro1.php">
                                 <button class="botao-sabermais-banner"></button>
                             </a>
                         </div>
@@ -167,7 +167,7 @@ require_once 'config.php';
                             <div class="banner-texto">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
                             </div>
-                            <a href="#">
+                            <a href="livro2.php">
                                 <button class="botao-sabermais-banner"></button>
                             </a>
                         </div>
@@ -181,7 +181,7 @@ require_once 'config.php';
                             <div class="banner-texto">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
                             </div>
-                            <a href="#">
+                            <a href="livro3.php">
                                 <button class="botao-sabermais-banner"></button>
                             </a>
                         </div>
@@ -195,7 +195,7 @@ require_once 'config.php';
                             <div class="banner-texto">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit magnam tempore odio recusandae ullam soluta, fuga nisi obcaecati. In deleniti rem, possimus velit quam nam voluptatem at autem odit? Tempore?</p>
                             </div>
-                            <a href="#">
+                            <a href="livro4.php">
                                 <button class="botao-sabermais-banner"></button>
                             </a>
                         </div>

@@ -6,9 +6,7 @@ require_once 'head.php'
 
 ?>
 
-<div id="todo-conteudo">
 
-    <div id="conteudo" style="margin-bottom: -26px;">
 
         <div class="container-fluid">
 
@@ -16,7 +14,7 @@ require_once 'head.php'
 
                 <div class="col titulo-topo mt-5 ml-2 ml-md-5">Contactos</div>
                 <div class="w-100"></div>
-                <div class="col subtitulo-topo destaques-titulo mt-2 ml-2 ml-md-5 mb-3">Pode contactar-me através do e-mail geral@sebastiaoalves.com </div>
+                <div class="col subtitulo-topo destaques-titulo mt-2 ml-2 ml-md-5 mb-3">Pode contactar-me através do e-mail ou telefone</div>
             </div>
         </div>
 
@@ -25,47 +23,45 @@ require_once 'head.php'
             <div class="row justify-content-center">
                 <div class="col-10 col-md-3">
                     <div class="row">
-                        <div class="col-12 contactos-titulo text-center">Email Editora</div>
+                        <div class="col-12 field-title contactos-titulo text-center">Telefone</div>
                     </div>
                     <div class="row">
-                        <div class="col-12 contactos-conteudo text-center mt-1">info@culturaeditora.pt</div>
-                    </div>
-                </div>
-                <div class="col-10 col-md-3 mt-5 mt-md-0">
-                    <div class="row">
-                        <div class="col-12 contactos-titulo text-center">Morada Editora</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 contactos-conteudo text-center mt-1">Rua Jorge Colaço 37A<br>1700-252 Lisboa, Portugal</div>
+                        <div class="col-12 field-text contactos-conteudo text-center mt-1">+351 123 456 789</div>
                     </div>
                 </div>
                 <div class="col-10 col-md-3 mt-5 mt-md-0">
                     <div class="row">
-                        <div class="col-12 contactos-titulo text-center">Email Autor</div>
+                        <div class="col-12 field-title contactos-titulo text-center">Morada </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 contactos-conteudo text-center mt-1">geral@sebastiaoalves.com</div>
+                        <div class="col-12 field-text contactos-conteudo text-center mt-1">Lorem ipsum, dolor sit amet 12, 1234-543 Lorem</div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-3 mt-5 mt-md-0">
+                    <div class="row">
+                        <div class="col-12 field-title contactos-titulo text-center">Email</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 field-text contactos-conteudo text-center mt-1">lorem@lorem.pt</div>
                     </div>
                 </div>
             </div>
-
-            <div class="row contactos-linha mx-auto"></div>
+        <br>
 
             <div class="row justify-content-center">
                 <div class="col-10 col-md-4">
                     <div class="row">
-                        <div class="col-12 contactos-titulo text-center">Horário Editora</div>
+                        <div class="col-12 field-title contactos-titulo text-center">Horário </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 contactos-conteudo text-center mt-1">Segunda a Sexta das 11:00h às 18:00h</div>
+                        <div class="col-12 field-text contactos-conteudo text-center mt-1">De Segunda a Sexta das 00:00h às 00:00h</div>
                     </div>
                 </div>
             </div>
 
         </div>
 
-    </div>
-</div>
+
 
 <?php
 require_once 'foot.php';

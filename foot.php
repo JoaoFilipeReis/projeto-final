@@ -1,9 +1,3 @@
-<?php
-
-require_once 'config.php';
-
-?>
-
 <!--
 <footer>
     <div class="container" style="margin-top: 50px; margin-bottom: 70px;"" style=" margin: auto;">
@@ -96,57 +90,56 @@ Novo Footer
 
 -->
 
-<div class="d-flex justify-content-center aligns-items-center container-fluid d-none d-md-flex">
 
-    <div class="menu-rodape-linha"></div>
 
-    <div class="menu-rodape-itens">
-        <a class="menus-barra-rodape " href="#">HOME</a>
-        <a class="menus-barra-rodape " href="#">AUTOR</a>
-        <a class="menus-barra-rodape " href="#">LIVROS</a>
-        <a class="menus-barra-rodape " href="#">IMPRENSA</a>
-        <a class="menus-barra-rodape " href="#">CONTACTOS</a>
-    </div>
 
-    <div class="menu-rodape-linha"></div>
+<footer class="container">
 
-</div>
-<div class="menu-rodape-linha">utcut</div>
-<footer class="container" style="margin-top: 50px; margin-bottom: 70px;">
+    <div class="">
 
-    <div class="row">
-        <div class="col-10 d-block d-md-none rodape-linha-mobile mx-auto"></div>
+        <div class="footer-line d-flex justify-content-center d-none d-md-flex"></div>
+
+        <div class="menu-rodape-itens d-flex justify-content-center d-none d-md-flex">
+            <a class="menus nav-link p-3" href="./home.php">HOME</a>
+            <a class="menus nav-link p-3" href="./autor.php">AUTOR</a>
+            <a class="menus nav-link p-3" href="">LIVROS</a>
+            <a class="menus nav-link p-3" href="./imprensa.php">IMPRENSA</a>
+            <a class="menus nav-link p-3" href="./contactos.php">CONTACTOS</a>
+        </div>
+
+        <div class="footer-line d-flex justify-content-center d-none d-md-flex"></div>
+
     </div>
 
     <div class="row">
 
         <div class="col-10 col-md-7 mx-auto">
 
-            <div class="row destaques-titulo">
-                <div class="col-12 text-center text-md-left">Contactos</div>
+            <div class="row">
+                <div class="footer-title col-12 text-center text-md-left">Contactos</div>
             </div>
-            <div class="row" style="margin-top: 20px;">
-                <div class="col-12 col-md-6 text-center text-md-left">
-                    <div class="contactos-titulo">Morada</div>
-                    <div class="contactos-conteudo">Lorem ipsum, dolor sit amet 12, 1234-543 Lorem</div>
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <div class="field-title text-center text-md-left">Morada</div>
+                    <div class="field-text">Lorem ipsum, dolor sit amet 12, 1234-543 Lorem</div>
                 </div>
-                <div class="col-12 col-md-3 text-center text-md-left mt-3 mt-md-0">
-                    <div class="contactos-titulo">Telefone</div>
-                    <div class="contactos-conteudo">+351 123 456 789</div>
+                <div class="col-12 col-md-3 text-center text-md-left">
+                    <div class="field-title">Telefone</div>
+                    <div class="field-text">+351 123 456 789</div>
                 </div>
-                <div class="col-12 col-md-3 text-center text-md-left mt-3 mt-md-0">
-                    <div class="contactos-titulo">Email</div>
-                    <div class="contactos-conteudo">lorem@lorem.pt</div>
+                <div class="col-12 col-md-3 text-center text-md-left">
+                    <div class="field-title">Email</div>
+                    <div class="field-text">lorem@lorem.pt</div>
                 </div>
             </div>
-            <div class="d-none d-md-block" style="margin-top: 60px;">
+            <div class="d-none d-md-block" >
                 <img src="./public/imagens-desktop/livroreclamacoes.svg" alt="Livro de Reclamações"></a>
                 <img src="./public/imagens-desktop/ralc.svg" alt="ralc"></a>
             </div>
 
         </div>
 
-        <div class="col-12 col-md-3 text-center text-md-right mt-3 mt-md-0">
+        <div class="col-12 col-md-3">
             <div class="d-flex justify-content-end">
                 <h1 class="social-title">siga-me nas redes sociais</h1>
             </div>
@@ -160,13 +153,13 @@ Novo Footer
 
 
         <div class="col-12 d-flex flex-nowrap justify-content-around d-md-none mx-auto" style="margin-top: 50px;">
-            <img id="livro-mobile" src="./public/imagens-desktop/livroreclamacoes.svg" alt="Livro de Reclamações"></a>
-            <img id="ralc-mobile" src="./public/imagens-desktop/ralc.svg" alt="ralc"></a>
+            <img src="./public/imagens-desktop/livroreclamacoes.svg" alt="Livro de Reclamações"></a>
+            <img src="./public/imagens-desktop/ralc.svg" alt="ralc"></a>
         </div>
 
-        <div id="copyright" class="text-center p">
+        <div class="text-center">
             <div class="cookies">Política de Cookies.</div>
-            <div>Copyright © 2021 Grupo MediaMaster. <br class="d-md-none">Todos os direitos reservados.</div>
+            <div class="copyright">Copyright © 2022 Grupo MediaMaster. <br class="d-md-none">Todos os direitos reservados.</div>
         </div>
 
     </div>

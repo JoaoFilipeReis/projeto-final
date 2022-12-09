@@ -2,6 +2,7 @@
 <?php
 require_once 'config.php';
 require_once 'head.php';
+
 ?>
 
 <div class="container-fluid">
@@ -19,6 +20,28 @@ require_once 'head.php';
                 </div>
                 <div class="d-flex justify-content-center">
                     <button class="home-btn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+
+    <div id="caixa-topo" class="row offset-md-1 pt-1 pl-4">
+        <div class="col d-flex titulo-topo mt-5 ml-2 ml-md-5">
+            <div class="col">
+                <img class="bem-vindo" src="./public/imagens-desktop/FOTO-editada.jpg" alt="foto-editada">
+            </div>
+            <div class="col">
+            <div class="">
+                    <h1 class="home-title col-12">bem-vindo ao meu website</h1>
+                </div>
+                <div class="">
+                    <p1 class="home-text col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sit quidem iste aliquam unde vel quod cupiditate, alias, assumenda distinctio saepe! Impedit quod ducimus numquam accusantium nostrum explicabo unde praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sit quidem iste aliquam unde vel quod cupiditate, alias, assumenda distinctio saepe! Impedit quod ducimus numquam accusantium nostrum explicabo unde praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sit quidem iste aliquam unde vel quod cupiditate, alias, assumenda distinctio saepe! Impedit quod ducimus numquam accusantium nostrum explicabo unde praesentium.</p1>
+                </div>
+                <div class="">
+                    <button class="home-btn col-12"></button>
                 </div>
             </div>
         </div>
@@ -54,7 +77,7 @@ require_once 'head.php';
                         <p class="text-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum, dolorem aperiam id minus omnis ad beatae molestias odit iusto officia sequi corrupti doloribus atque dolore. Voluptatibus nostrum ab libero.</p>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <button class="home-btn"></button>
+                        <a href="./livro1.php"><button class="home-btn"></button></a>
                     </div>
                 </div>
             </div>
@@ -75,7 +98,7 @@ require_once 'head.php';
                         <p class="text-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum, dolorem aperiam id minus omnis ad beatae molestias odit iusto officia sequi corrupti doloribus atque dolore. Voluptatibus nostrum ab libero.</p>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <button class="home-btn"></button>
+                        <a href="./livro4.php"><button class="home-btn"></button></a>
                     </div>
                 </div>
             </div>
@@ -95,31 +118,15 @@ require_once 'head.php';
                         <p class="text-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum, dolorem aperiam id minus omnis ad beatae molestias odit iusto officia sequi corrupti doloribus atque dolore. Voluptatibus nostrum ab libero.</p>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <button class="home-btn"></button>
+                        <a href="./livro3.php"><button class="home-btn"></button></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--
-        <div class="card" style="width: 100%;">
-            <img src="./public/imagens-desktop/livro3.jpg" class="card-img-top imagem" alt="vgu">
-            <div class="card-body">
-                <div class="d-flex justify-content-start">
-                    <h1>coleccionador de amnésias</h1>
-                </div>
-                <div class="d-flex justify-content-start">
-                    <p class="category">em promoção</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <p class="text-highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum, dolorem aperiam id minus omnis ad beatae molestias odit iusto officia sequi corrupti doloribus atque dolore. Voluptatibus nostrum ab libero.</p>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <button class="home-btn"></button>
-                </div>
-            </div>
-        </div>
-        -->
-
     </div>
 </div>
+
+<?php
+require_once 'foot.php'
+?>
