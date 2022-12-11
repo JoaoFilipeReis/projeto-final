@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require_once 'config.php';
 
@@ -18,16 +18,14 @@ require_once 'config.php';
 </head>
 
 <body>
-    <header class="container-fluid">
 
+    <header class="container-fluid">
         <div id="start" class="row">
             <div class="main-title col-12 d-flex justify-content-around justify-content-md-center">
                 <div class="row">Sebastião Alves</div>
-                <div class="row">
-                    <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn">
-                        <img id="botao-menu-imagem" src="./public/imagens-desktop/menu.svg">
-                    </button>
-                </div>
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsebtn">
+                    <img id="botao-menu-imagem" src="./public/imagens-desktop/menu.svg">
+                </button>
             </div>
             <div class="linha-titulo col-auto mx-auto"></div>
 
@@ -35,7 +33,7 @@ require_once 'config.php';
                 <div class="collapse navbar-collapse d-block-md" id="collapsebtn">
                     <ul class="navbar-nav">
                         <li class="nav-item mr-md-3">
-                            <a class="nav-link menus active" href="home.php">Home</a>
+                            <a class="nav-link menus" href="home.php">Home</a>
                         </li>
                         <li class="nav-item mr-md-3">
                             <a class="nav-link menus " href="autor.php">Autor</a>
@@ -52,13 +50,15 @@ require_once 'config.php';
                         <li class="nav-item mr-md-3">
                             <a class="nav-link menus" href="imprensa.php">Imprensa</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-md-3">
                             <a class="nav-link menus" href="contactos.php">Contactos</a>
+                        </li>
+                        <li class="nav-item mr-md-3">
+                            <a class="nav-link menus" href="./backoffice/autor-create.php">Adicionar</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-
         </div>
 
         <div id="cabecalho" class="row d-none d-md-block">
@@ -200,10 +200,7 @@ require_once 'config.php';
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
-
     </header>

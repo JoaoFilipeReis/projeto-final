@@ -3,7 +3,7 @@
 /* Cabeçalho Desktop */
 #start {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -19,7 +19,7 @@
 
 .linha-titulo {
   margin-top: 15px;
-  width: 100%;
+  width: 90%;
   height: 1px;
   background-color: rgb(112, 112, 112);
 }
@@ -27,7 +27,6 @@
 #menu-topo {
   margin-top: 5px;
   transition-duration: 0.500ms;
-  margin-left: 20px;
 }
 
 #collapsebtn {
@@ -35,12 +34,8 @@
   flex-wrap: nowrap;
 }
 
-.menus.active {
-  font-size: 16px;
-  font-family: url('Lato-Black.eot');
-  font-weight: bold;
-  color: rgb(77, 77, 77);
-  text-transform: uppercase;
+.menus:hover {
+  color: rgb(180, 125, 51);
 }
 
 .menus {
@@ -48,7 +43,14 @@
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
-  color: rgb(180, 125, 51);
+  color: rgb(77, 77, 77);
+  padding-left: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .menus {
+    background-color: white;
+  }
 }
 
 #submenu-livros {
@@ -56,17 +58,21 @@
   box-shadow: 0px 0px 10px 0px rgb(175 175 175);
   border-radius: 0px;
   margin-left: 50px;
+  background-color: white;
 }
 
 .submenus {
-  font-family: "IBM Plex Sans";
+  font-family: url('IBMPlexSans-Light.eot');
   font-weight: 500;
-  font-size: 0.813rem;
+  font-size: 13px;
   text-transform: uppercase;
-  color: var(--cor-cinza-4d);
+  color: #4D4D4D;
   margin-bottom: 5px;
   text-decoration: none;
-  margin-left: 15px;
+}
+
+.submenus:hover {
+  color: rgb(180, 125, 51);
 }
 
 #cabecalho {
@@ -99,17 +105,14 @@
 }
 
 .carousel-inner {
-  width: 100vw;
+  width: 100%;
   height: auto;
-  max-height: 730px;
   z-index: 100 !important;
-  background-image: linear-gradient(rgb(220, 220, 220), rgb(222, 222, 222), rgb(208, 208, 208));
 }
 
 .carousel-item .img-fluid {
   width: 100%;
   height: auto;
-  max-height: 730px;
   z-index: 100 !important;
 }
 
@@ -365,8 +368,6 @@
   color: rgb(77, 77, 77);
 }
 
-
---------------------------------------------------------
 /* Estilização Contactos e Imprensa*/
 
 
@@ -422,7 +423,7 @@
   margin-left: 60px;
 }
 
-.noticias-titulo{
+.noticias-titulo {
   margin-bottom: 12px;
   margin-top: 65px;
   font-family: url('IBMPlexSans-Light.eot');
@@ -456,7 +457,7 @@
   height: 400px;
 }
 
-.btn-autor{
+.btn-autor {
   margin-top: 75px;
 }
 
@@ -483,16 +484,17 @@
   background-repeat: no-repeat;
 }
 
-.paginacao.active {
+.paginacao:hover {
   color: #B17E3B;
 }
 
 .paginacao {
   font-family: url('IBMPlexSans-Light.eot');
-  font-size: 13px;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: bold;
   color: rgb(77, 77, 77);
   margin: 0px 12px;
+  text-decoration: none;
 }
 
 #seta-direita {
@@ -533,6 +535,18 @@
 /* Estilização Home */
 
 /* -------------------------------------------- Área Bem-Vindo */
+@media only screen and (max-width: 767px) {
+  #bemvindo-caixa-imagem {
+    padding: 0px !important;
+  }
+}
+
+#bemvindo-imagem {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  max-height: 400px;
+}
 
 .home-box {
   width: 100%;
@@ -565,7 +579,7 @@
   margin-left: 35px;
   margin-right: 35px;
   font-size: 15px;
-  font-family: 'IBM Plex Sans, Light';
+  font-family: url('IBM Plex Sans, Light');
   color: rgb(77, 77, 77);
 }
 
@@ -664,61 +678,44 @@
   background-size: cover;
 }
 
-/* Estilização Formulário */
-/*
-.page {
+/* Estilização CRUD */
+
+.imagem {
+  border-bottom: solid 1px #efefef;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.blog-action a {
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 0 5px;
+  color: #000;
+}
+
+.new-blog a {
+  margin-top: 15px;
+  color: #ff5722;
+  font-style: italic;
+}
+
+.form-field {
+  margin-bottom: 5px;
+}
+
+.form-field label {
+  display: block;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
   padding: 5px;
-  max-width: 980px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.form .form-group {
-  margin-bottom: 8px;
-}
-
-.form input {
-  width: 100%;
-  border: solid 2px #9fa8da;
-  outline: none;
-  border-radius: 3px;
-  padding: 8px;
-}
-
-.form button {
+.botao-crud {
   cursor: pointer;
-  background-color: #283593;
-  border: solid 1px #283593;
-  color: white;
-  border-radius: 3px;
-  padding: 5px 15px;
-  font-size: 1rem;
-}
-
-.form button:hover {
-  opacity: 0.9;
-}
-*/
-
-/* form-login */
-.form-login {
-  max-width: 480px;
-  width: 100%;
-}
-
-.horizontal-line {
-  margin: 5px 0;
-  border-bottom: solid 1px #c3c3c3;
-}
-
-#sair-login {
-  font-size: 40px;
-  font-family: url('IBM Plex Sans, Light');
-  font-weight: bold;
-  color: rgb(77, 77, 77);
-  text-decoration: none;
-  display: flex;
-  margin: auto;
-  justify-content: center;
+  background-color: #e7e7e7;
+  padding: 5px;
+  border: solid 1px #ccc;
 }
